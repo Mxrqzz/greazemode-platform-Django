@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(226, 226, 226);
+    font-family: "Inter", sans-serif;
+}
+
+.menu_superior {
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+}
+
+.menu_superior ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu_superior ul li {
+    margin-right: 80px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.menu_superior a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu_superior a:hover {
+    color: blue;
+}
+
