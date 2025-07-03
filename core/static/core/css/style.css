@@ -4,39 +4,114 @@ body {
     margin: 0;
     background-color: rgb(226, 226, 226);
     font-family: "Inter", sans-serif;
+
 }
 
 .menu_superior {
     width: 100%;
-    padding-top: 25px;
-    padding-left: 50px;
+
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(252, 252, 252);
-    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
 }
 
 .menu_superior ul {
     list-style: none;
     margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+
 }
 
 .menu_superior ul li {
-    margin-right: 80px;
-    margin-left: 20px;
+    margin: 0 30px;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    padding: 10px 20px;
 }
 
 .menu_superior a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .menu_superior a:hover {
-    color: blue;
+    color: rgb(28, 127, 255);
 }
 
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.title_form {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.title_form a {
+    color: rgb(162, 0, 255);
+    text-decoration: none;
+}
+
+.title_form a:hover {
+    color: rgb(28, 127, 255);
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_box {
+    margin-top: 15px;
+}
+
+.input_box input {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 300px;
+    padding: 10px;
+    background-color: none;
+}
+
+.input_box input:hover {
+    background-color: white;
+
+}
+
+.buttons_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.button_negative:hover{
+    background-color: red;
+    color: white;
+}
+
+.button_positive:hover {
+    background-color: green;
+    color: white;
+}

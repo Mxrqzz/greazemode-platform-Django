@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Cadastro - {% endblock %}
+
+{% block content %}
+
+<div class="formulario">
+    <div class="title_form">
+        <h1>Criar uma nova conta.</h1>
+        <p>Já tem uma conta? Faça o seu <a href="{% url 'login' %}">Login</a></p>
+    </div>
+    <form action="" method="post">
+        <div class="input_group">
+            <!--Nome-->
+            <div class="input_box">
+                <input type="text" name="name" placeholder="Nome: *" maxlength="30" required>
+            </div>
+            <!--Sobrenome-->
+            <div class="input_box">
+                <input type="text" name="surname" placeholder="Sobrenome: *" maxlength="80" required>
+            </div>
+            <!--Telefone-->
+            <div class="input_box">
+                <input type="text" name="number" placeholder="Telefone: *" maxlength="15" required>
+            </div>
+            <!--Email-->
+            <div class="input_box">
+                <input type="email" name="email" placeholder="E-mail: *" maxlength="80" required>
+            </div>
+            <!--Senha -->
+            <div class="input_box">
+                <input type="password" name="password" placeholder="Senha: *" maxlength="50">
+            </div>
+            <!--Senha Confirmação-->
+            <div class="input_box">
+                <input type="password" name="passwordConfirm" placeholder="Confirme sua senha: *" maxlength="50">
+            </div>
+        </div>
+        <div class="buttons_area">
+            <button type="reset" class="button_negative">Limpar</button>
+            <button type="submit" class="button_positive">Criar conta</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -7,3 +7,10 @@ def index(request):
 
 def about(request):
     return render(request, "core/about.html")
+
+
+def register(request):
+    return render(request, "core/register.html")
+
+def login(request):
+    return render(request, "core/login.html")
