@@ -106,7 +106,7 @@ button {
     padding: 10px 15px;
 }
 
-.button_negative:hover{
+.button_negative:hover {
     background-color: red;
     color: white;
 }

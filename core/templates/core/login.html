@@ -1,5 +1,28 @@
 {% extends 'core/base.html' %}
 
-{% block title %} Login - {% endblock %}
+{% block title %} Cadastro - {% endblock %}
 
-{% block content %} <h1>Login</h1> {% endblock %}
+{% block content %}
+
+<div class="formulario">
+    <div class="title_form">
+        <h1>Login</h1>
+        <p>Não tem uma conta? Faça o seu <a href="{% url 'register' %}">Cadastro</a></p>
+    </div>
+    <form action="" method="post">
+        <div class="input_group">
+            <!--Email-->
+            <div class="input_box">
+                <input type="email" name="email" placeholder="E-mail: *" maxlength="80" required>
+            </div>
+            <!--Senha -->
+            <div class="input_box">
+                <input type="password" name="password" placeholder="Senha: *" maxlength="50">
+            </div>
+        </div>
+        <div class="buttons_area">
+            <button type="submit" class="button_positive">Entrar</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
